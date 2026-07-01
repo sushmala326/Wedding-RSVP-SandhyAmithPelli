@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amith & Sandhya Wedding RSVP</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdfbf7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+        }
+
+        header {
+            padding: 40px 20px;
+            background: linear-gradient(rgba(255,245,230,0.8), rgba(255,255,255,1));
+        }
+
+        .sri-rastu {
+            font-size: 1.2rem;
+            color: #b32a2a;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            color: #b32a2a;
+            margin: 10px 0;
+        }
+
+        .ampersand {
+            font-size: 2rem;
+            color: #d4af37;
+        }
+
+        .parents {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .invitation-text {
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #d4af37;
+            margin: 20px 0;
+            font-weight: 600;
+        }
+
+        .music-btn {
+            background-color: #b32a2a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-bottom: 30px;
+            transition: 0.3s;
+        }
+
+        .music-btn:hover {
+            background-color: #d4af37;
+        }
+
+        .section-title {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5rem;
+            color: #b32a2a;
+            margin-top: 40px;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: #d4af37;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .event-card {
+            background: #fff8f0;
+            border-left: 4px solid #b32a2a;
+            padding: 15px;
+            margin: 15px 0;
+            text-align: left;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .event-card h3 {
+            margin: 0 0 5px 0;
+            color: #b32a2a;
+            font-size: 1.2rem;
+        }
+
+        .event-card p {
+            margin: 3px 0;
+            font-size: 0.95rem;
+        }
+
+        .venue-section {
+            background: #fff5f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            background-color: #b32a2a;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px 5px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-link:hover {
+            background-color: #d4af37;
+        }
+
+        form {
+            text-align: left;
+            padding: 20px;
+            background: #fff8f0;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .radio-group {
+            margin-top: 8px;
+        }
+
+        .radio-group label {
+            display: inline-block;
+            margin-right: 15px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background-color: #b32a2a;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #d4af37;
+        }
+
+        footer {
+            margin-top: 5px;
+            padding: 30px 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <audio id="bg-music" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <header>
+        <div class="sri-rastu">శ్రీ రస్తు</div>
+        
+        <h1>Amith Reddy Gaddam</h1>
+        <div class="parents">S/o: Gaddam Sathayavva & Gaddam Gangaram</div>
+        
+        <div class="ampersand">&</div>
+        
+        <h1>Sandhya Rani Nomula</h1>
+        <div class="parents">D/o: Nomula Premala & Nomula Muthyam Reddy</div>
+        
+        <div class="invitation-text">Wedding Invitation</div>
+        
+        <button class="music-btn" id="music-toggle" onclick="toggleMusic()">🎵 Play Music</button>
+    </header>
+
+    <div class="section-title">Wedding Details</div>
+    <div class="tagline">Mee Raka Maa Aanandham</div>
+
+    <div class="event-card">
+        <h3>Engagement</h3>
+        <p><strong>Date:</strong> Friday, 21st August 2026</p>
+        <p><strong>Time:</strong> 11:00 AM to 2:00 PM</p>
+    </div>
+
+    <div class="event-card">
+        <h3>Mehndi & Sangeeth</h3>
+        <p><strong>Date:</strong> Friday, 21st August 2026</p>
+        <p><strong>Time:</strong> 6:00 PM to 11:00 PM</p>
+    </div>
+
+    <div class="event-card">
+        <h3>Haldi</h3>
+        <p><strong>Date:</strong> Saturday, 22nd August 2026</p>
+        <p><strong>Time:</strong> 9:30 AM to 1:00 PM</p>
+    </div>
+
+    <div class="event-card">
+        <h3>PelliKoduku PelliKuthuru Event</h3>
+        <p><strong>Date:</strong> Saturday, 22nd August 2026</p>
+        <p><strong>Time:</strong> 4:00 PM to 7:00 PM</p>
+    </div>
+
+    <div class="event-card">
+        <h3>Marriage (Kalyanam)</h3>
+        <p><strong>Date:</strong> Sunday, 23rd August 2026</p>
+        <p><strong>Time:</strong> 10:00 AM to 4:00 PM</p>
+        <p><strong>Muhurtham:</strong> 11:00 AM</p>
+    </div>
+
+    <div class="venue-section">
+        <h3>📍 Venue</h3>
+        <p><strong>Mapple Lane Retreat</strong><br>5208 OH-119, Minster, OH 45865</p>
+        
+        <a href="https://www.google.com/maps/search/?api=1&query=Mapple+Lane+Retreat+5208+OH-119+Minster+OH+45865" target="_blank" class="btn-link">Open Maps</a>
+        
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Amith+%26+Sandhya+Wedding&dates=20260823T140000Z/20260823T200000Z&details=Wedding+Muhurtham+at+11:00+AM&location=Mapple+Lane+Retreat,+5208+OH-119,+Minster,+OH+45865" target="_blank" class="btn-link">Add to Calendar</a>
+    </div>
+
+    <div class="section-title" id="rsvp">RSVP</div>
+    <div class="tagline">Please confirm your presence</div>
+
+    <form action="https://formspree.io/f/YOUR_ENDPOINT_HERE" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+        <label>Will you attend?</label>
+        <div class="radio-group">
+            <label><input type="radio" name="attendance" value="Yes" checked> Yes, I will attend</label><br>
+            <label><input type="radio" name="attendance" value="No"> Sorry, I can't attend</label><br>
+            <label><input type="radio" name="attendance" value="Maybe"> Maybe</label>
+        </div>
+
+        <label for="guests">Number of Guests:</label>
+        <select id="guests" name="guests">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5+">5+</option>
+        </select>
+
+        <label>Meal Preference:</label>
+        <div class="radio-group">
+            <label><input type="radio" name="meal" value="Veg" checked> Veggie</label>
+            <label><input type="radio" name="meal" value="Non-Veg"> Non-Veg</label>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit RSVP</button>
+    </form>
+
+    <footer>
+        <p>With love,<br><strong>Gaddam & Nomula Families</strong></p>
+        <p>Mee Raka Maa Aanandham</p>
+    </footer>
+</div>
+
+<script>
+    function toggleMusic() {
+        var music = document.getElementById("bg-music");
+        var btn = document.getElementById("music-toggle");
+        
+        if (music.paused) {
+            music.play().catch(function(error) {
+                console.log("Audio play blocked by browser setup.");
+            });
+            btn.innerHTML = "⏸ Pause Music";
+        } else {
+            music.pause();
+            btn.innerHTML = "🎵 Play Music";
+        }
+    }
+</script>
+
+</body>
+</html>
